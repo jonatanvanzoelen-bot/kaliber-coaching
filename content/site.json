@@ -1,0 +1,92 @@
+{
+  "settings": {
+    "calendly": "https://calendly.com/jvztraining/30min",
+    "instagram": "https://www.instagram.com/jonatanvanzoelen/",
+    "instagram_handle": "@jonatanvanzoelen",
+    "shop_enabled": false,
+    "shop_url": "",
+    "shop_label": "Merch"
+  },
+  "hero": {
+    "kicker": "Online fysikcoachning",
+    "title": "Höj din",
+    "title_accent": "kaliber.",
+    "text": "För dig som tränar hårt men har kört fast. Bygg en fysik du är stolt över, och en hög med kvitton på att du klarar det du bestämmer dig för.",
+    "cta": "Boka ett kostnadsfritt samtal",
+    "cta_secondary": "Se resultaten",
+    "image": "assets/img/jonatan-hero.webp",
+    "stats": [
+      { "value": "50+", "label": "klienter coachade" },
+      { "value": "1:1", "label": "individanpassat upplägg" },
+      { "value": "4", "label": "steg till nästa nivå" }
+    ]
+  },
+  "problem": {
+    "title": "Du gör allt rätt.",
+    "title_accent": "Ändå står du still.",
+    "items": [
+      "Du tränar 4 till 5 pass i veckan men ser ungefär likadan ut som för ett år sedan.",
+      "Du byter program och övningar ofta, men vet inte om du faktiskt blir starkare.",
+      "Du äter hälsosamt, men har ingen koll på hur mycket protein, kolhydrater och fett du får i dig.",
+      "Du vet inte om du ska bygga eller deffa, så du hamnar någonstans mittemellan."
+    ],
+    "punch": "Det är inte disciplinen som saknas.",
+    "punch_accent": "Det är systemet."
+  },
+  "about": {
+    "title": "Jag har varit både",
+    "title_accent": "minst och störst i rummet.",
+    "image": "",
+    "paragraphs": [
+      "Jag heter Jonatan van Zoelen. När jag började träna var jag 15 år och vägde 50 kilo. Jag var minst, tanigast och svagast, och självkänslan var därefter. Träningen gjorde något med mitt psyke långt innan den förändrade min kropp.",
+      "Men jag hade ingen kunskap. Tre år senare vägde jag 110 kilo och var rejält överviktig. Raka motsatsen, och ändå samma osäkerhet.",
+      "Sedan dess har jag lagt åren på att lära mig hur fysikutveckling faktiskt fungerar, genom utbildningar, studier och arbetet med över 50 klienter. Jag gillar att nörda ner mig i forskningen, men ingenting av det spelar någon roll om det inte går att använda i din vardag.",
+      "Kaliber Coaching finns för att du ska slippa göra samma misstag som jag gjorde."
+    ]
+  },
+  "method": {
+    "title": "Fyra steg.",
+    "title_accent": "I rätt ordning.",
+    "intro": "De flesta som fastnar justerar fel sak. Vi går igenom ditt upplägg steg för steg och går inte vidare förrän steget innan sitter.",
+    "steps": [
+      { "name": "Utförande", "text": "Att flytta en vikt och att träna en muskel är två olika saker. Sitter inte utförandet gör du bara ett dåligt jobb oftare." },
+      { "name": "Progression", "text": "Fler reps eller mer vikt med samma utförande. Det är inte målet, det är kvittot på att det du gör fungerar." },
+      { "name": "Ansträngning", "text": "De flesta ligger längre från sin gräns än de tror. Du lär dig var failure faktiskt ligger, övning för övning." },
+      { "name": "Volym", "text": "För lite ger ingen effekt. För mycket hinner du inte återhämta dig från. Vi hittar nivån som passar ditt mål och ditt liv." }
+    ],
+    "outro": "Ovanpå det lägger vi en kosthållning som matchar målet, i tydliga faser: bygga när du ska bygga, skala av när du ska skala av."
+  },
+  "results": {
+    "title": "Resultat som",
+    "title_accent": "syns.",
+    "intro": "Vanliga killar med jobb, studier och ett liv vid sidan av gymmet."
+  },
+  "process": {
+    "title": "Så går det",
+    "title_accent": "till.",
+    "steps": [
+      { "name": "Boka ett videosamtal", "text": "30 minuter, kostnadsfritt. Vi går igenom var du står, vad du har testat och vart du vill." },
+      { "name": "Du får en plan", "text": "Jag pekar ut vad som bromsar dig och hur vi löser det. Passar vi ihop pratar vi om coachning. Annars har du fått med dig en plan ändå." },
+      { "name": "Vi kör", "text": "Träningsupplägg och kost byggda efter ditt liv, med löpande uppföljning och justeringar längs vägen." }
+    ]
+  },
+  "booking": {
+    "title": "Boka ditt",
+    "title_accent": "samtal.",
+    "text": "Välj en tid som passar. Samtalet sker på video, kostar ingenting och förpliktigar inte till något."
+  },
+  "faq": {
+    "title": "Vanliga",
+    "title_accent": "frågor.",
+    "items": [
+      { "q": "Måste jag vara avancerad för att få hjälp?", "a": "Nej, men coachningen passar bäst för dig som redan tränar regelbundet och vill ta nästa steg. Är du helt ny på gymmet är det oftast bättre att komma igång på egen hand först." },
+      { "q": "Jag har mycket just nu. Ska jag vänta tills det lugnar ner sig?", "a": "Det lugnar sällan ner sig. Upplägget byggs efter ditt liv som det ser ut idag, inte som du önskar att det såg ut." },
+      { "q": "Måste jag väga all mat?", "a": "I perioder, ja. Det är det enda sättet att veta vad du faktiskt äter. Målet är att du lär dig så mycket att du klarar dig utan vågen längre fram." },
+      { "q": "Hur sker coachningen?", "a": "Helt online. Du tränar på ditt eget gym och vi har löpande kontakt och uppföljning." },
+      { "q": "Vad kostar det?", "a": "Det går vi igenom på samtalet, när jag vet vad du behöver. Samtalet i sig är kostnadsfritt." }
+    ]
+  },
+  "footer": {
+    "tagline": "Höj din kaliber."
+  }
+}

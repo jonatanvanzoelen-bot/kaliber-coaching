@@ -1,0 +1,147 @@
+# Adminpanelen (Pages CMS, app.pagescms.org): vad som går att redigera och var bilderna sparas.
+media:
+  input: assets/img
+  output: /assets/img
+  categories: [image]
+  rename: safe
+
+content:
+  - name: results
+    label: Klientresultat
+    type: file
+    path: content/results.json
+    format: json
+    fields:
+      - name: items
+        label: Resultat (överst visas först)
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {name}"
+        fields:
+          - name: name
+            label: Namn eller rubrik (valfritt)
+            type: string
+          - name: text
+            label: Kort text (valfritt)
+            type: text
+          - name: images
+            label: Bilder (första bilden visas på kortet)
+            type: image
+            options:
+              multiple:
+                max: 8
+              extensions: [jpg, jpeg, png, webp]
+
+  - name: site
+    label: Texter och inställningar
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: settings
+        label: Inställningar
+        type: object
+        fields:
+          - { name: calendly, label: Calendly-länk, type: string }
+          - { name: instagram, label: Instagram-länk, type: string }
+          - { name: instagram_handle, label: Instagram-namn, type: string }
+          - { name: shop_enabled, label: Visa butikslänk i menyn, type: boolean }
+          - { name: shop_url, label: Butikens adress, type: string }
+          - { name: shop_label, label: Butikens namn i menyn, type: string }
+      - name: hero
+        label: Startsektion
+        type: object
+        fields:
+          - { name: kicker, label: Liten rad överst, type: string }
+          - { name: title, label: Rubrik (vit), type: string }
+          - { name: title_accent, label: Rubrik (röd), type: string }
+          - { name: text, label: Text, type: text }
+          - { name: cta, label: Huvudknapp, type: string }
+          - { name: cta_secondary, label: Andra knappen, type: string }
+          - { name: image, label: Porträtt, type: image }
+          - name: stats
+            label: Siffror
+            type: object
+            list: true
+            fields:
+              - { name: value, label: Siffra, type: string }
+              - { name: label, label: Text, type: string }
+      - name: problem
+        label: Problemet
+        type: object
+        fields:
+          - { name: title, label: Rubrik (vit), type: string }
+          - { name: title_accent, label: Rubrik (röd), type: string }
+          - { name: items, label: Punkter, type: text, list: true }
+          - { name: punch, label: Slutrad (vit), type: string }
+          - { name: punch_accent, label: Slutrad (röd), type: string }
+      - name: about
+        label: Om mig
+        type: object
+        fields:
+          - { name: title, label: Rubrik (vit), type: string }
+          - { name: title_accent, label: Rubrik (röd), type: string }
+          - { name: image, label: Bild (valfri), type: image }
+          - { name: paragraphs, label: Stycken, type: text, list: true }
+      - name: method
+        label: Metoden
+        type: object
+        fields:
+          - { name: title, label: Rubrik (vit), type: string }
+          - { name: title_accent, label: Rubrik (röd), type: string }
+          - { name: intro, label: Inledning, type: text }
+          - name: steps
+            label: Steg
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Namn, type: string }
+              - { name: text, label: Text, type: text }
+          - { name: outro, label: Avslutning, type: text }
+      - name: results
+        label: Resultat (rubrik)
+        type: object
+        fields:
+          - { name: title, label: Rubrik (vit), type: string }
+          - { name: title_accent, label: Rubrik (röd), type: string }
+          - { name: intro, label: Inledning, type: text }
+      - name: process
+        label: Så går det till
+        type: object
+        fields:
+          - { name: title, label: Rubrik (vit), type: string }
+          - { name: title_accent, label: Rubrik (röd), type: string }
+          - name: steps
+            label: Steg
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Namn, type: string }
+              - { name: text, label: Text, type: text }
+      - name: booking
+        label: Boka
+        type: object
+        fields:
+          - { name: title, label: Rubrik (vit), type: string }
+          - { name: title_accent, label: Rubrik (röd), type: string }
+          - { name: text, label: Text, type: text }
+      - name: faq
+        label: Vanliga frågor
+        type: object
+        fields:
+          - { name: title, label: Rubrik (vit), type: string }
+          - { name: title_accent, label: Rubrik (röd), type: string }
+          - name: items
+            label: Frågor
+            type: object
+            list: true
+            fields:
+              - { name: q, label: Fråga, type: string }
+              - { name: a, label: Svar, type: text }
+      - name: footer
+        label: Sidfot
+        type: object
+        fields:
+          - { name: tagline, label: Slogan, type: string }

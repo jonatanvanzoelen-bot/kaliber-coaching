@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kaliber Coaching | Online fysikcoachning för män</title>
+<meta name="description" content="Online fysikcoachning för män som tränar hårt men har kört fast. Individanpassad träning och kost med Jonatan van Zoelen. Boka ett kostnadsfritt videosamtal.">
+<meta property="og:title" content="Kaliber Coaching | Höj din kaliber">
+<meta property="og:description" content="Online fysikcoachning för män som tränar hårt men har kört fast. Boka ett kostnadsfritt videosamtal.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="icon" href="assets/brand/emblem.png">
+<link rel="preload" href="assets/fonts/Anton.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Montserrat-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Kaliber Coaching, till toppen">
+    <img src="assets/brand/emblem.png" alt="" width="40" height="40">
+    <span class="brand-text"><b>KALIBER</b><i>COACHING</i></span>
+  </a>
+  <nav class="nav-links" id="navLinks" aria-label="Huvudmeny">
+    <a href="#om">Om mig</a>
+    <a href="#metod">Metoden</a>
+    <a href="#resultat">Resultat</a>
+    <a href="#faq">Frågor</a>
+    <a href="#" id="shopLink" hidden></a>
+    <a class="btn btn-small" href="#boka">Boka samtal</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Öppna menyn" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker" data-k="hero.kicker"></p>
+        <h1><span data-k="hero.title"></span> <span class="accent" data-k="hero.title_accent"></span></h1>
+        <p class="lead" data-k="hero.text"></p>
+        <div class="cta-row">
+          <a class="btn" href="#boka" data-k="hero.cta"></a>
+          <a class="btn btn-ghost" href="#resultat" data-k="hero.cta_secondary"></a>
+        </div>
+      </div>
+      <div class="reticle" aria-hidden="true">
+        <svg viewBox="0 0 400 400">
+          <circle cx="200" cy="200" r="150" />
+          <circle cx="200" cy="200" r="122" class="thin" />
+          <path d="M200 10v70M200 320v70M10 200h70M320 200h70" />
+        </svg>
+        <div class="reticle-photo" id="heroPhoto"></div>
+      </div>
+    </div>
+    <div class="wrap stats" id="stats"></div>
+  </section>
+
+  <section class="section" id="problem">
+    <div class="wrap narrow">
+      <h2><span data-k="problem.title"></span> <span class="accent" data-k="problem.title_accent"></span></h2>
+      <ul class="checks" id="problemItems"></ul>
+      <p class="punch"><span data-k="problem.punch"></span> <span class="accent" data-k="problem.punch_accent"></span></p>
+    </div>
+  </section>
+
+  <section class="section alt" id="om">
+    <div class="wrap about-grid">
+      <div class="about-photo" id="aboutPhoto"></div>
+      <div>
+        <p class="eyebrow"><b>01</b> Om mig</p>
+        <h2><span data-k="about.title"></span> <span class="accent" data-k="about.title_accent"></span></h2>
+        <div class="prose" id="aboutText"></div>
+        <a class="btn btn-ghost" href="#boka">Prata med mig</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="metod">
+    <div class="wrap">
+      <p class="eyebrow"><b>02</b> Metoden</p>
+      <h2><span data-k="method.title"></span> <span class="accent" data-k="method.title_accent"></span></h2>
+      <p class="intro" data-k="method.intro"></p>
+      <ol class="steps" id="methodSteps"></ol>
+      <p class="outro" data-k="method.outro"></p>
+    </div>
+  </section>
+
+  <section class="section alt" id="resultat">
+    <div class="wrap">
+      <p class="eyebrow"><b>03</b> Resultat</p>
+      <h2><span data-k="results.title"></span> <span class="accent" data-k="results.title_accent"></span></h2>
+      <p class="intro" data-k="results.intro"></p>
+      <div class="results" id="resultsGrid"></div>
+      <div class="center"><button class="btn btn-ghost" id="moreResults" hidden>Visa fler resultat</button></div>
+    </div>
+  </section>
+
+  <section class="section" id="process">
+    <div class="wrap">
+      <p class="eyebrow"><b>04</b> Så går det till</p>
+      <h2><span data-k="process.title"></span> <span class="accent" data-k="process.title_accent"></span></h2>
+      <ol class="process" id="processSteps"></ol>
+    </div>
+  </section>
+
+  <section class="section alt" id="boka">
+    <div class="wrap">
+      <p class="eyebrow"><b>05</b> Boka</p>
+      <h2><span data-k="booking.title"></span> <span class="accent" data-k="booking.title_accent"></span></h2>
+      <p class="intro" data-k="booking.text"></p>
+      <div class="calendly" id="calendly">
+        <a class="btn" id="calendlyFallback" href="#" target="_blank" rel="noopener">Öppna bokningen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="wrap narrow">
+      <p class="eyebrow"><b>06</b> Frågor</p>
+      <h2><span data-k="faq.title"></span> <span class="accent" data-k="faq.title_accent"></span></h2>
+      <div class="faq" id="faqItems"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div class="brand">
+      <img src="assets/brand/emblem.png" alt="" width="44" height="44">
+      <span class="brand-text"><b>KALIBER</b><i>COACHING</i></span>
+    </div>
+    <p class="tagline" data-k="footer.tagline"></p>
+    <a id="igLink" href="#" target="_blank" rel="noopener"></a>
+  </div>
+  <p class="copy">© <span id="year"></span> Kaliber Coaching</p>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" aria-label="Stäng">×</button>
+  <button class="lb-nav lb-prev" aria-label="Föregående bild">‹</button>
+  <img alt="Klientresultat i stor storlek">
+  <button class="lb-nav lb-next" aria-label="Nästa bild">›</button>
+  <span class="lb-count"></span>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
